@@ -1,0 +1,20 @@
+.add_form {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    /* width: 40%; */
+    /* margin: 0 27%; */
+    /* height: 150px;
+    justify-content: space-between; */
+}
+
+.inputGroup {
+    /* border: 2px solid green; */
+    padding: 10px;
+    display: flex;
+}
+
+.checkbox {
+    margin: 0 10px !important;
+    width: 20px !important;
+}

@@ -1,0 +1,27 @@
+.nav {
+    border-bottom: 2px solid cornflowerblue;
+}
+
+.li_group {
+width: 30vw;
+display: flex;
+justify-content: space-between;
+list-style: none;
+}
+
+.li_group li {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.li_group :hover {
+    background-color: cornflowerblue;
+}
+
+@media screen and (max-width: 500px) {
+
+    .li_group {
+        width: 100%;
+    }
+    
+}

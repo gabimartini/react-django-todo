@@ -1,0 +1,44 @@
+.detail_group {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color:cornflowerblue;
+    align-self: center;
+}
+
+.item {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: large;
+    margin-top: 10px;
+}
+
+.item span {
+    font-weight: normal;
+    margin-left: 10px;
+    font-size: medium;
+}
+
+.wrap_result {
+    border: 2px solid rgb(187, 188, 187);
+    width: 50%;
+    padding: 20px;
+    align-self: center;
+    margin-top: 40px;
+}
+
+.checked {
+    margin: 0 10px !important;
+    width: 20px !important;
+}
+
+.buttons {
+    margin-top: 40px;
+}
+
+.buttons button {
+    margin-left: 10px;
+}

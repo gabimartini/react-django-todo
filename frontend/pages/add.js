@@ -24,7 +24,7 @@ const [isSuccess, setIsSucess] = useState("")
     return(
         <>
         <Form setNewContent={setNewContent} setNewTitle={setNewTitle} setIsCompleted={setIsCompleted} newTitle={newTitle} newContent={newContent} isCompleted={isCompleted}/>
-        <button onClick={() => onAdd()}>Add Task</button>
+        <button onClick={() => onAdd()} role='button'>Add Task</button>
         <p className={isSuccess !==  "" ? classes.success : classes.null}>{isSuccess}</p>
         </>
     )

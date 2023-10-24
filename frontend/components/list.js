@@ -40,7 +40,7 @@ const List = () => {
     }
     return (
         <div className={classes.group_list}>
-            <h1 className={classes.title}>This is all your tasks: </h1>
+            <h1 className={classes.title} role="title">This is all your tasks: </h1>
             {
                 isEdit && (
                     <Edit id={id} setEdit={setIsEdit}/>
@@ -49,7 +49,7 @@ const List = () => {
             <table  className={classes.list_item}>
                 <thead>
                     <tr>
-                    <th className={classes.title_task}>Title</th>
+                    <th className={classes.title_task} role="list">Title</th>
                     <th></th>
                     <th></th>
                     </tr>
@@ -61,8 +61,8 @@ const List = () => {
                     
                 <tr key={el.id}>
                     <td className={classes.title_task}><Link href={`/tasks/${el.id}`}>{el.title}</Link></td>
-                    <td><button onClick={() => onEdit(el.id)} >Edit task</button></td>
-                    <td><button onClick={() => onDelete(el.id)} >Delete task</button></td>
+                    <td><button onClick={() => onEdit(el.id)} cy-data="edit-button">Edit task</button></td>
+                    <td><button onClick={() => onDelete(el.id)} cy-data="delete-button">Delete task</button></td>
                 </tr>
                 
                 )

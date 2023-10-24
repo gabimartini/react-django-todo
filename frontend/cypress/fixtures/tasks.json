@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Learn Next.js",
+    "content": "This is a post for next.js cypress test",
+    "complete": false
+  },
+  {
+    "id": 2,
+    "title": "Learn Python",
+    "content": "This is a post for python cypress test",
+    "complete": false
+  },
+  {
+    "id": 3,
+    "title": "Learn Vue",
+    "content": "This is a post for vue cypress test",
+    "complete": true
+  }
+]

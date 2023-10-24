@@ -1,10 +1,10 @@
-import List from "@/components/list";
+import List from "../../components/list";
 
 const Tasks = () => {
     return (
         <>
             <List />
-            <button>Add new task</button>
+            <button role="button">Add new task</button>
         </>
     )
 }

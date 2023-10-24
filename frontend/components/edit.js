@@ -35,7 +35,7 @@ const Edit = ({id, setEdit}) => {
             <button onClick={() => setEdit(false)}>X</button>
             <h1>Edit your task</h1>
             <Form setNewTitle={setTitle} newTitle={title} setNewContent={setContent} newContent={content} setIsCompleted={setComplete} isCompleted={complete}/>
-            <button onClick={() => onUpdate()} style={{position: "flex"}}>Update</button>
+            <button onClick={() => onUpdate()} style={{position: "flex"}} cy-data="update-button">Update</button>
         </div>
         </div>
     )

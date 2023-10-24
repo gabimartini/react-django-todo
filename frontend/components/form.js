@@ -12,8 +12,8 @@ const Form = ({setNewContent, setNewTitle, setIsCompleted, newTitle, newContent,
                     <textarea id="content"  rows="5" onChange={(e) => setNewContent(e.target.value)} value={newContent}/>
                     </div>
                     <div className={classes.inputGroup}>
-                    <label  htmlFor="Complete">Complete</label>
-                    <input className={classes.checkbox} id="Complete" type="checkbox" rows="5" onChange={(e) => setIsCompleted(e.target.checked)} checked={isCompleted}/>
+                    <label  htmlFor="complete">Complete</label>
+                    <input className={classes.checkbox} id="complete" type="checkbox" rows="5" onChange={(e) => setIsCompleted(e.target.checked)} checked={isCompleted}/>
                 </div>
             
         </form>

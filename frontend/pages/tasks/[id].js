@@ -20,7 +20,7 @@ const TaskDetail = () => {
             <p className={classes.item}>Completed: <input type="checkbox" checked={task.complete} className={classes.checked}/></p>
         </div>
         <div className={classes.buttons}>
-        <button>Edit</button>
+        <button cy-data='edit'>Edit</button>
         <button>Delete</button>
         </div>
         </div>

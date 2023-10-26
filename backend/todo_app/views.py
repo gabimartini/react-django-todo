@@ -3,6 +3,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from .models import Todo
 from .serializers import TodoSerializer
+from django.shortcuts import get_object_or_404
 
 
 class TodoApiView(APIView):
@@ -40,13 +41,13 @@ class EditApiView(APIView):
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
-        return Response(serializer.error, status=status.HTTP_400_BAD_REQUEST)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 class DeleteApiView(AddApiView):
     def delete(self, request, pk=None,):
         id = pk
-        todo = Todo.objects.get(id=id)
+        todo = get_object_or_404(Todo, id=id)
         if todo:
             todo.delete()
             return Response(status=status.HTTP_204_NO_CONTENT)
